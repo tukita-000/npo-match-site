@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>支援プラットフォーム</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #fff8f3;
+      color: #333;
+      margin-top: 100px;
+    }
+
+    .gift-button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff6f61;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ギフトでつながる支援プラットフォーム</h1>
+  <button class="gift-button" onclick="sendGift()">🎁 ギフトを贈る</button>
+  <div class="message" id="giftMessage"></div>
+
+  <script>
+    function sendGift() {
+      const message = document.getElementById("giftMessage");
+      message.innerText = "🎉 ありがとう！ギフトが送られました。";
+    }
+  </script>
+
+</body>
+</html>
